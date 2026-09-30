@@ -23,20 +23,46 @@ p{
     margin-bottom: 0px;
 }
 
-/* Secciones tarjetas */
-.board-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; /* Esta es la que distribuye el espacio vertical en una columna */
-    gap: 3rem;                     /* gap-5 */
+/* FONDO */
+/* Columnas */
+.col-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  justify-content: center;
 }
 
-/* Estilos de las tarjetas de artículos */
-.paper {
-    padding: 0.5rem;               /* p-2 en Bootstrap (0.5rem = 8px) */
-    display: flex;
-    flex-direction: column;
-    background-color: azure;
-    border-radius: 0.25rem;        /* rounded-1 en Bootstrap (0.25rem = 4px) */
+/* TARJETAS */
+.card-proyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem; 
+  border-radius: 0.25rem;
+  background-color: azure;
+}
+
+/* Texto tarjeta */
+.p-card{
+    text-align: center;
+    font-size: var(--font-size);
+}
+
+@media (max-width: 450px){
+    .col-columna-querie{
+        gap: 50vw;
+        width: 31%;
+    }
+
+    .card-proyecto-querie{
+        padding: 0px;
+    }
+
+    .p-card-querie{
+        font-size: medium;
+    }
 }
