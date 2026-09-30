@@ -63,7 +63,12 @@ p{
     will-change: transform;
 }
 
-.card-proyecto:hover {
+.card-proyecto-center:hover{
+    transform: rotate(2deg) scale(1.05);
+    background-color: rgb(180, 218, 240);
+}
+
+.card-proyecto:hover{
     transform: rotate(2deg) scale(1.05);
     background-color: rgb(180, 218, 240);
 }
