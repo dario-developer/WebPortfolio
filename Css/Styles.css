@@ -26,31 +26,61 @@ p{
 /* FONDO */
 /* Columnas */
 .col-columna {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-  justify-content: space-between;
-  width: 25%;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    justify-content: center;
 }
 
 /* TARJETAS */
 .card-proyecto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 0.5rem; 
-  border-radius: 0.25rem;
-  background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem; 
+    border-radius: 0.25rem;
+    background-color: azure;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    will-change: transform;
+    height: 100%;
+}
+
+.card-proyecto-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem; 
+    border-radius: 0.25rem;
+    background-color: azure;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    will-change: transform;
+}
+
+.card-proyecto:hover {
+    transform: rotate(2deg) scale(1.05);
+    background-color: rgb(180, 218, 240);
 }
 
 /* Texto tarjeta */
-.p-card{
+.p-card {
     text-align: center;
     font-size: var(--font-size);
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
+
+
 
 @media (max-width: 450px){
     .col-columna-querie{
@@ -59,7 +89,7 @@ p{
     }
 
     .card-proyecto-querie{
-        padding: 0px;
+        height: 100%;
     }
 
     .p-card-querie{
