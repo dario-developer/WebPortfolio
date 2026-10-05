@@ -1,9 +1,13 @@
-/* Aquí van todas las variables */
+/* Variables */
 :root{
     --principal-font: sans-serif;
     --font-size: larger;
     --total-bg-color: rgb(200, 247, 255);
+    --headers-color:blanchedalmond;
+    --board-color: burlywood;
 }
+
+/* GENERAL */
 
 body{
     background-color: var(--total-bg-color);
@@ -11,17 +15,19 @@ body{
 
 /* Color para los encabezados */
 .headers-color{
-    background-color: blanchedalmond;
+    background-color: var(--headers-color);
 }
 
 .board-color{
-    background-color: burlywood;
+    background-color: var(--board-color);
 }
 
 /* Párrafos */
 p{
     margin-bottom: 0px;
 }
+
+/* INDEX */
 
 /* FONDO */
 /* Columnas */
@@ -43,7 +49,7 @@ p{
     width: 100%;
     padding: 0.5rem; 
     border-radius: 0.25rem;
-    background-color: azure;
+    background-color: var(--total-bg-color);
     box-sizing: border-box;
     transition: transform 0.3s ease, background-color 0.3s ease;
     will-change: transform;
@@ -57,7 +63,7 @@ p{
     width: 100%;
     padding: 0.5rem; 
     border-radius: 0.25rem;
-    background-color: azure;
+    background-color: var(--total-bg-color);
     box-sizing: border-box;
     transition: transform 0.3s ease, background-color 0.3s ease;
     will-change: transform;
@@ -86,8 +92,12 @@ p{
 }
 
 
+/* SOBRE MI */
+
+
 
 @media (max-width: 450px){
+    /* INDEX */
     .col-columna-querie{
         gap: 50vw;
         width: 31%;
@@ -100,4 +110,8 @@ p{
     .p-card-querie{
         font-size: medium;
     }
+
+    /* SOBRE MI */
+
+
 }
