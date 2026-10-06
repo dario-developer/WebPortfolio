@@ -6,9 +6,30 @@
     --headers-color:blanchedalmond;
     --board-color: burlywood;
     --border-radius-1:0.25rem;
+    --text-color: black;
 }
 
 /* GENERAL */
+
+a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+
+/* Back button */
+#back-button{
+    position:fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    width: clamp(50px, 10%, 75px);
+    left:1vw;
+    top: 1vh;
+    border-radius: 100%;
+    background-color: gray;
+    text-decoration: none;
+    opacity: 50%;
+}
 
 body{
     background-color: var(--total-bg-color);
