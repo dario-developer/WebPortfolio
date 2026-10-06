@@ -13,20 +13,42 @@
     </head>
 
     <body>
-        <header class="container d-flex justify-content-center">
+        <header class="d-flex justify-content-center">
             <p class="headers-color py-2 px-4">Sobre mi</p>
         </header>
 
-        <div class="py-3 mx-5 flex-column justify-content-center board-color">
-            <article class ="container gap-4 d-flex flex-row justify-content-around align-items-center">
-                <p class="col">Lorem ipsum dolor sit amet consectetur adipiscing elit, cubilia nascetur orci tortor enim ante accumsan per, dui urna et vehicula sollicitudin nullam. Nullam pellentesque inceptos egestas sed ridiculus porta diam</p>
-                <img class ="col-3 col-m-5" src="https://picsum.photos/400" alt="">
+        <div class="p-3 gap-3 vstack p-md-2 mx-2 mx-md-5 board-color">
+            <!-- d-flex y flex-column en móvil, flex-md-row y gap-4 en ordenador -->
+            <article class="d-flex flex-column flex-md-row gap-3 align-items-center">
+                <div class="col mx-md-3 mx-lg-5">
+                    <p class="text-center col-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, minus. Quod voluptatem nisi aspernatur necessitatibus libero. Laudantium, laborum facilis sequi perferendis similique eligendi nam quo laboriosam vitae temporibus. Possimus, blanditiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi tenetur autem repudiandae quaerat veritatis nemo. Quam aliquam ea officiis voluptatem? Est aut dignissimos facilis repellendus fugiat quisquam blanditiis nemo quis.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img class="img-fluid" src="https://picsum.photos/400" alt="">
+                </div>
             </article>
-            <article>
-
+            <article class="mx-md-3 mx-lg-5">
+                <p class="col text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates illum quidem laborum soluta doloribus aliquam nesciunt voluptatem harum reprehenderit nobis, inventore quisquam voluptatum! Quibusdam magnam voluptas vero quasi praesentium architecto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium nam, quia, nihil alias ut quas consectetur aperiam a provident quam excepturi hic accusamus in fuga explicabo aspernatur harum recusandae?</p>
             </article>
-            <article>
-
+            <article class="gap-3 vstack align-items-center">
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="img-fluid" src="https://picsum.photos/400" alt="">
+                    </div>
+                    
+                    <div class="col text-center">
+                        <img class="img-fluid" src="https://picsum.photos/400" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <img class="img-fluid" src="https://picsum.photos/400" alt="">
+                    </div>
+                    
+                    <div class="col text-center">
+                        <img class="img-fluid" src="https://picsum.photos/400" alt="">
+                    </div>
+                </div>
             </article>
         </div>
     </body>

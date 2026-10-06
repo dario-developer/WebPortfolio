@@ -5,6 +5,7 @@
     --total-bg-color: rgb(200, 247, 255);
     --headers-color:blanchedalmond;
     --board-color: burlywood;
+    --border-radius-1:0.25rem;
 }
 
 /* GENERAL */
@@ -48,7 +49,7 @@ p{
     align-items: center;
     width: 100%;
     padding: 0.5rem; 
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius-1);
     background-color: var(--total-bg-color);
     box-sizing: border-box;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -62,7 +63,7 @@ p{
     align-items: center;
     width: 100%;
     padding: 0.5rem; 
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius-1);
     background-color: var(--total-bg-color);
     box-sizing: border-box;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -93,8 +94,6 @@ p{
 
 
 /* SOBRE MI */
-
-
 
 @media (max-width: 450px){
     /* INDEX */
