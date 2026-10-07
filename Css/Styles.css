@@ -29,6 +29,14 @@ a{
     background-color: gray;
     text-decoration: none;
     opacity: 50%;
+
+    /* HOVER */
+    transition: opacity 0.25s ease;
+
+}
+
+#back-button:hover{
+    opacity: 100%;
 }
 
 body{
