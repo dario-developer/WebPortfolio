@@ -1,145 +1,144 @@
-/* Variables */
+/* ============================================================
+   VARIABLES
+   ============================================================ */
 :root{
-    --principal-font: sans-serif;
-    --font-size: larger;
-    --total-bg-color: rgb(200, 247, 255);
-    --headers-color:blanchedalmond;
-    --board-color: burlywood;
-    --border-radius-1:0.25rem;
-    --text-color: black;
+    --font-main: sans-serif;
+
+    --font-size-lg: larger;
+    --font-size-sm: medium;
+
+    --color-bg: rgb(200, 247, 255);
+    --color-heading: blanchedalmond;
+    --color-board: burlywood;
+    --color-hover: rgb(180, 218, 240);
+    --color-text: black;
+
+    --radius-sm: 0.25rem;
+
+    --gap-col: 3rem;
+
+    --transition-card: transform 0.3s ease, background-color 0.3s ease;
+    --transition-fade: opacity 0.25s ease;
 }
 
-/* GENERAL */
+/* ============================================================
+   BASE
+   ============================================================ */
+body{
+    background-color: var(--color-bg);
+}
 
 a{
+    color: var(--color-text);
     text-decoration: none;
-    color:var(--text-color);
 }
 
-/* Back button */
-#back-button{
-    position:fixed;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    width: clamp(50px, 10%, 75px);
-    left:1vw;
+img{
+    border-radius: var(--radius-sm);
+}
+
+p{
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   THEME
+   ============================================================ */
+.pf-heading{
+    background-color: var(--color-heading);
+}
+
+.pf-board{
+    background-color: var(--color-board);
+}
+
+/* ============================================================
+   BACK BUTTON
+   ============================================================ */
+.pf-back-btn{
+    position: fixed;
+    left: 1vw;
     top: 1vh;
-    border-radius: 100%;
+    z-index: 100;
+    width: clamp(50px, 10%, 75px);
     background-color: gray;
-    text-decoration: none;
+    border-radius: 100%;
     opacity: 50%;
-
-    /* HOVER */
-    transition: opacity 0.25s ease;
-
+    transition: var(--transition-fade);
 }
 
-#back-button:hover{
+.pf-back-btn:hover{
     opacity: 100%;
 }
 
-body{
-    background-color: var(--total-bg-color);
-}
-
-/* Color para los encabezados */
-.headers-color{
-    background-color: var(--headers-color);
-}
-
-.board-color{
-    background-color: var(--board-color);
-}
-
-/* Párrafos */
-p{
-    margin-bottom: 0px;
-}
-
-/* INDEX */
-
-/* FONDO */
-/* Columnas */
-.col-columna {
+/* ============================================================
+   BOARD LAYOUT
+   ============================================================ */
+.pf-col{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    gap: var(--gap-col);
     width: 25%;
-    justify-content: center;
 }
 
-/* TARJETAS */
-.card-proyecto {
+.pf-card{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0.5rem; 
-    border-radius: var(--border-radius-1);
-    background-color: var(--total-bg-color);
-    box-sizing: border-box;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    will-change: transform;
     height: 100%;
-}
-
-.card-proyecto-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0.5rem; 
-    border-radius: var(--border-radius-1);
-    background-color: var(--total-bg-color);
-    box-sizing: border-box;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem;
+    background-color: var(--color-bg);
+    border-radius: var(--radius-sm);
     will-change: transform;
+    transition: var(--transition-card);
 }
 
-.card-proyecto-center:hover{
+.pf-card:hover{
+    background-color: var(--color-hover);
     transform: rotate(2deg) scale(1.05);
-    background-color: rgb(180, 218, 240);
 }
 
-.card-proyecto:hover{
-    transform: rotate(2deg) scale(1.05);
-    background-color: rgb(180, 218, 240);
-}
-
-/* Texto tarjeta */
-.p-card {
-    text-align: center;
-    font-size: var(--font-size);
-    margin: 0;
-    width: 100%;
-    flex-grow: 1;
+.pf-card-text{
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0;
+    font-size: var(--font-size-lg);
+    text-align: center;
 }
 
+/* ============================================================
+   GALLERY / CAROUSEL
+   ============================================================ */
+/* En escritorio se muestra la cuadrícula; el carrusel es solo para móvil */
+.pf-carousel{
+    display: none;
+}
 
-/* SOBRE MI */
-
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
 @media (max-width: 450px){
-    /* INDEX */
-    .col-columna-querie{
+    .pf-col{
         gap: 50vw;
         width: 31%;
     }
 
-    .card-proyecto-querie{
-        height: 100%;
+    .pf-card-text{
+        font-size: var(--font-size-sm);
     }
 
-    .p-card-querie{
-        font-size: medium;
+    /* En móvil la cuadrícula se sustituye por el carrusel */
+    .pf-gallery{
+        display: none;
     }
 
-    /* SOBRE MI */
-
-
+    .pf-carousel{
+        display: block;
+    }
 }
