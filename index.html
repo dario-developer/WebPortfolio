@@ -13,7 +13,7 @@
     </head>
     <body class="container">
         <!-- Header. Es la zona de arriba con mi logo, nombre etc -->
-        <header class="container pf-heading d-flex justify-content-between align-items-center mt-2 p-4 rounded-4">
+        <header class="pf-heading d-flex justify-content-between align-items-center mt-2 p-4 rounded-4">
             <p>Darío Navarro</p>
 
             <!-- PONER LOGO BUENO -->
@@ -23,39 +23,41 @@
         </header>
 
         <!-- Cuerpo del tablón de anuncios -->
-        <div class="container pf-board d-flex justify-content-evenly align-content-between rounded-4 my-4 p-3 h-100">
+        <div class="pf-board rounded-4 my-4 g-md-5 p-3">
+            <div class="row g-3 g-md-5 justify-content-center align-content-between h-100">
 
-            <!-- Columna izquierda -->
-            <section class="pf-col">
-                <article class="pf-card">
-                    <img class="w-100" src="https://picsum.photos/400" alt="Imagen de mejores proyectos">
-                    <p class="pf-card-text">Mejores proyectos</p>
-                </article>
-                <article class="pf-card">
-                    <img class="w-100" src="https://picsum.photos/400" alt="Imagen de mejores proyectos">
-                    <p class="pf-card-text">Todos los proyectos</p>
-                </article>
-            </section>
+                <!-- Columna izquierda -->
+                <section class="col-4 d-flex flex-column justify-content-center align-items-center gap-3 gap-md-5">
+                    <article class="pf-card d-flex flex-column align-items-center w-100 flex-fill p-2">
+                        <img class="w-100" src="https://picsum.photos/400" alt="Imagen de mejores proyectos">
+                        <p class="pf-card-text d-flex align-items-center justify-content-center flex-grow-1 w-100">Mejores proyectos</p>
+                    </article>
+                    <article class="pf-card d-flex flex-column align-items-center w-100 flex-fill p-2">
+                        <img class="w-100" src="https://picsum.photos/400" alt="Imagen de mejores proyectos">
+                        <p class="pf-card-text d-flex align-items-center justify-content-center flex-grow-1 w-100">Todos los proyectos</p>
+                    </article>
+                </section>
 
-            <!-- Columna central -->
-            <section class="pf-col">
-                <a class="pf-card h-auto" href="HTML/sobremi.html">
-                    <img class="w-100" src="https://picsum.photos/400" alt="Imagen sobre mí">
-                    <p class="pf-card-text">Sobre mi</p>
-                </a>
-            </section>
+                <!-- Columna central -->
+                <section class="col-4 d-flex flex-column justify-content-center align-items-center gap-3 gap-md-5">
+                    <a class="pf-card d-flex flex-column align-items-center w-100 p-2" href="HTML/sobremi.html">
+                        <img class="w-100" src="https://picsum.photos/400" alt="Imagen sobre mí">
+                        <p class="pf-card-text d-flex align-items-center justify-content-center flex-grow-1 w-100">Sobre mi</p>
+                    </a>
+                </section>
 
-            <!-- Columna derecha -->
-            <section class="pf-col">
-                <article class="pf-card">
-                    <img class="w-100" src="https://picsum.photos/400" alt="Imagen de mejores proyectos">
-                    <p class="pf-card-text">Linea de tiempo</p>
-                </article>
-                <article class="pf-card">
-                    <img class="w-100" src="https://picsum.photos/400" alt="Imagen de mejores proyectos">
-                    <p class="pf-card-text">CV</p>
-                </article>
-            </section>
+                <!-- Columna derecha -->
+                <section class="col-4 d-flex flex-column justify-content-center align-items-center gap-3 gap-md-5">
+                    <article class="pf-card d-flex flex-column align-items-center w-100 flex-fill p-2">
+                        <img class="w-100" src="https://picsum.photos/400" alt="Imagen de mejores proyectos">
+                        <p class="pf-card-text d-flex align-items-center justify-content-center flex-grow-1 w-100">Linea de tiempo</p>
+                    </article>
+                    <article class="pf-card d-flex flex-column align-items-center w-100 flex-fill p-2">
+                        <img class="w-100" src="https://picsum.photos/400" alt="Imagen de mejores proyectos">
+                        <p class="pf-card-text d-flex align-items-center justify-content-center flex-grow-1 w-100">CV</p>
+                    </article>
+                </section>
+            </div>
         </div>
 
         <!-- LIBRERÍAS -->
