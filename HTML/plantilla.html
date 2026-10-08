@@ -15,10 +15,72 @@
     <body>
         <header class="d-flex justify-content-center navbar">
             <p class="pf-heading py-2 px-4">Plantilla proyectos</p>
-            <a class="pf-back-btn" href="proyectos.html">
+            <a class="pf-back-btn" href="../index.html">
                 <img src="https://img.icons8.com/?size=100&id=26194&format=png&color=000000" alt="">
             </a>
         </header>
+
+        <div class="p-3 gap-5 vstack my-4 mx-2 mx-md-5 pf-board rounded-2">
+            <!-- Texto + imagen: columna en móvil, fila en ordenador -->
+            <article class="row g-3 align-items-center">
+                <div class="col-12 col-md">
+                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, minus. Quod voluptatem nisi aspernatur necessitatibus libero. Laudantium, laborum facilis sequi perferendis similique eligendi nam quo laboriosam vitae temporibus. Possimus, blanditiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi tenetur autem repudiandae quaerat veritatis nemo. Quam aliquam ea officiis voluptatem? Est aut dignissimos facilis repellendus fugiat quisquam blanditiis nemo quis.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <img class="img-fluid" src="https://picsum.photos/500" alt="">
+                </div>
+            </article>
+
+            <!-- GALERÍA -->
+            <article class="row gap-3 align-items-center justify-content-center">
+                <div class="row align-items-center justify-content-center pf-gallery col-6">
+                    <img class="img-fluid col-5" src="https://picsum.photos/500" alt="">
+                    <img class="img-fluid col-5" src="https://picsum.photos/500" alt="">
+                    <img class="img-fluid col-5" src="https://picsum.photos/500" alt="">
+                    <img class="img-fluid col-5" src="https://picsum.photos/500" alt="">
+                </div>
+            
+
+                <!-- CARRUSEL-->
+                <div id="carouselGaleria" class="carousel slide pf-carousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen de galería 1"></button>
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="1" aria-label="Imagen de galería 2"></button>
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="2" aria-label="Imagen de galería 3"></button>
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="3" aria-label="Imagen de galería 4"></button>
+                    </div>
+
+                    <div class="carousel-inner rounded-2">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://picsum.photos/400" alt="Imagen de galería 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://picsum.photos/400" alt="Imagen de galería 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://picsum.photos/400" alt="Imagen de galería 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://picsum.photos/seed/g4/400" alt="Imagen de galería 4">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, minus. Quod voluptatem nisi aspernatur necessitatibus libero. Laudantium, laborum facilis sequi perferendis similique eligendi nam quo laboriosam vitae temporibus. Possimus, blanditiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi tenetur autem repudiandae quaerat veritatis nemo. Quam aliquam ea officiis voluptatem? Est aut dignissimos facilis repellendus fugiat quisquam blanditiis nemo quis.</p>
+                </div>
+            </article>
+        </div>
+
         <!-- Bootstrap JS (carrousel) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
